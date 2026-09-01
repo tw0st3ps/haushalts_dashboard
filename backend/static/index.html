@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haushalts-Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <h1>🏠 Haushalts-Dashboard</h1>
+  <nav id="tabs" class="tabs">
+    <button data-tab="uebersicht" class="tab active">Übersicht</button>
+    <button data-tab="putzplan" class="tab">Putzplan</button>
+    <button data-tab="essensplan" class="tab">Essensplan</button>
+    <button data-tab="favoriten" class="tab">Favoriten</button>
+    <button data-tab="einkauf" class="tab">Einkaufsliste</button>
+    <button data-tab="einstellungen" class="tab">Einstellungen</button>
+  </nav>
+</header>
+
+<main id="app">
+  <section id="view-uebersicht" class="view active"></section>
+  <section id="view-putzplan" class="view"></section>
+  <section id="view-essensplan" class="view"></section>
+  <section id="view-favoriten" class="view"></section>
+  <section id="view-einkauf" class="view"></section>
+  <section id="view-einstellungen" class="view"></section>
+</main>
+
+<div id="toast" class="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

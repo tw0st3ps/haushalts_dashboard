@@ -1,0 +1,12 @@
+services:
+  haushalt-dashboard:
+    build: ./backend
+    container_name: haushalt-dashboard
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - haushalt-data:/data
+
+volumes:
+  haushalt-data:
